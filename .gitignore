@@ -1,1 +1,29 @@
-*.venv
+# Local Python environments
+.venv/
+venv/
+env/
+
+# Python and notebook caches
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Training outputs and model weights
+result/
+offload/
+Llama-2-7b-chat-finetune/
+checkpoint-*/
+*.bin
+*.safetensors
+*.pt
+*.pth
+
+# Logs and experiment tracking
+*.log
+runs/
+wandb/
+
+# Local secrets and configuration
+.env
+.env.*
+!.env.example
